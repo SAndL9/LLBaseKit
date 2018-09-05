@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'LLBaseKit_Example' do
+  pod 'LLBaseKit', :path => '../'
+
+  target 'LLBaseKit_Tests' do
+    inherit! :search_paths
+    pod 'Masonry'
+    pod 'Aspects'
+    pod 'FBSnapshotTestCase'
+  end
+end
